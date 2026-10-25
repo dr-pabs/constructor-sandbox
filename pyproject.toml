@@ -11,7 +11,8 @@ requires-python = ">=3.12"
 dev = ["pytest>=8"]
 
 [tool.setuptools.packages.find]
-where = ["src"]
+include = ["sandbox*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
